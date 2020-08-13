@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Belfast Daffodil Project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Fondamento&family=Lacquer&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav sticky" id="myTopnav">
+        <a href="index.html" class="brand">The Belfast Daffodil Project</a>
+        <a href="aboutus.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="getinvolved.html">Getting Involved</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="donate.html">Donate</a>
+            <a href="aboutus.html">Join a Planting Party</a>
+            <a href="shareyourgarden.html">Share Your Garden</a>
+            <a href="https://us17.list-manage.com/survey?u=4345a4ff448a194b656019225&id=b475cc3c01">Review Us</a>
+          </div>
+        </div> 
+        <a href="faq.html" class="active">FAQs</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactus.html" class="push">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    <div class="header">
+        <h1 class="title">
+            The Belfast Daffodil 
+            <br>
+            Project</h1>
+        <h2 class="subtitle">Frequently Asked Questions</h2>
+    </div>
+    <div class="container cover faqs">
+      <h2>Got some questions for us? You've come to the right page! Read on friend.</h2><br>
+            <h3 class="accordion">Do daffodils come back every year?</h3>
+            <p class="panel">Yessirie! Daffodils are perennials, a type of plant that bloom every year from bulbs which survive the winter.</p>
+        
+            <h3 class="accordion">What type of care do daffodils need?</h3>
+            <p class="panel">Very little! These hardy little flowers will bloom and grow in all manners of environment. Just be sure to let the gree leaves wither before you remove them (3-4 weeks after blooming)</p>
+        
+            <h3 class="accordion">How do you plant a daffodil?</h3>
+            <p class="panel">Great question! To answer it, we caught our founder and CPO (Chief Planting Officer) Elisabeth Wolfe on video while she was planting a few. I'm sure she can give us a few pointers!</p>
+        
+            <h3 class="accordion">Are daffodils beneficial to the enironment?</h3>
+            <div class="panel">
+                <p>They sure are! They perform many essential functions in our ecosphere, such as:
+                    <ul>
+                        <li>Attractive to pollinators</li>
+                        <li>Help hold moisture in the soil</li>
+                        <li>Prevents soil erosion</li>
+                        <li>Provides nutrients for nearby flora</li>
+                    </ul>
+                </p>
+            </div>
+            <h3 class="accordion">My thumb isn't very green, do I need to plant them myself?</h3>
+            <p class="panel">Nope nope nope. The Belfast Daffodil Project has many ways in which you can help us succeed in our goal, not just planting. If you have a garden or patch of dirt we could plant daffodils in, click <a href="ShareYourGarden.html">here</a>. If you don't have any extra space, but would like to help us buy more bulbs, you can visit that page <a href="Donate.html">here</a>. </p>
+        <br><hr><br>
+    </div>  
+    <div class="projects faqs">
+        <h2>Still Have Questions?</h2>
+        <p>No problemo! Click the button below to be linked to our resident daffodilidologist, and they will get back to you as soon as possible!</p>
+        <br>
+        <a href="questions.html"><span class="button1">More Questions!</span></a>
+    </div>
+    <div class="footer">
+        <p class="copyright">©BrewsterInc.</p>
+        <p class="designed">designed by CoddiWomple Enterprises</p>
+    </div>
+
+
+    <!--Repsonsive NavBar Toggle-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+    <!-- Accordion Dropdown -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
+        </body>
+        </html>    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Belfast Daffodil Project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Fondamento&family=Lacquer&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav sticky" id="myTopnav">
+        <a href="index.html" class="brand">The Belfast Daffodil Project</a>
+        <a href="aboutus.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn sub-menu-parent"><a href="getinvolved.html">Getting Involved</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content sub-menu">
+            <a href="donate.html">Donate</a>
+            <a href="aboutus.html">Join a Planting Party</a>
+            <a href="shareyourgarden.html">Share Your Garden</a>
+            <a href="https://us17.list-manage.com/survey?u=4345a4ff448a194b656019225&id=b475cc3c01">Review Us</a>
+          </div>
+        </div> 
+        <a href="faq.html">FAQs</a>
+        <a href="calendar.html" class="active">Calendar</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactus.html" class="push">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    <div class="header">
+        <h1 class="title">
+            The Belfast Daffodil 
+            <br>
+            Project</h1>
+        <h2 class="subtitle">Event Calendar</h2>
+    </div>
+    <div class="container cover calendar">
+        <h2 class="title2">Check out our upcoming events below:</h2>
+        <div class="centered">
+            <div class="container responsive-iframe-container vresponsive-iframe-container vresponsive-iframe-container hidden-on-phone">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffe76b&amp;ctz=America%2FNew_York&amp;src=ZzZwN2ZjMm1oaTVhajQyMjg0ZHNoYXF1bjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E4C441&amp;showTz=0&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showDate=1&amp;showTitle=1&amp;title=The%20Belfast%20Daffodil%20Project&amp;showNav=1" style="border-radius: 10px; border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="container responsive-iframe-container vresponsive-iframe-container vresponsive-iframe-container hidden-on-desktop">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffe76b&amp;ctz=America%2FNew_York&amp;src=ZzZwN2ZjMm1oaTVhajQyMjg0ZHNoYXF1bjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E4C441&amp;showTz=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showDate=1&amp;showTitle=1&amp;title=TBDP%20Schedule&amp;showNav=0&amp;mode=AGENDA" style="border-radius: 10px; border-width:0" width="350" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <a href="getinvolved.html"><span class="button1">Join an Event!</span></a>
+    </div>
+    <br>
+    <div><h4>Want to keep up to date with all the comings and goings of The Belfast Daffodil Project? You wish is our command!</h4>
+      <a href="https://mailchi.mp/fcd6a3fc5cce/email-list-signup-form"><span class="button1">Subscribe</span></a>
+    </div>
+    <div class="footer">
+        <p class="copyright">©BrewsterInc.</p>
+        <p class="designed">designed by CoddiWomple Enterprises</p>
+    </div>
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>    
+</body>
+</html>

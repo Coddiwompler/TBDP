@@ -1,0 +1,733 @@
+body {
+    margin: auto 0;
+}
+
+p {
+    color: black;
+    font: 17px;
+}
+
+/** COLORS **/
+
+
+.rgba-primary-0 { color: rgb(255, 231, 107) } Primary
+.rgba-primary-1 { color: rgba(255,244,186,1) }
+.rgba-primary-2 { color: rgba(255,237,143,1) }
+.rgba-primary-3 { color: rgba(255,226, 76,1) }
+.rgba-primary-4 { color: rgba(233,202, 37,1) }
+.rgba-primary-4 { color: rgb(193, 144, 5, 1) }
+
+
+
+/** FONTS
+
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Fondamento', cursive;
+font-family: 'Lacquer', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Roboto Slab', serif;
+
+**/
+
+
+/******
+NAVBAR
+******/
+
+.topnav {
+    overflow: hidden;
+    background-color:white;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(193, 144, 5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-variant: small-caps;
+    
+  }
+
+  .dropbtn a {
+    padding: 0;
+    
+  }
+  
+  .active {
+    background-color: rgba(255,231,107,1);
+    color: rgb(193, 144, 5);
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: rgb(193, 144, 5);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-variant: small-caps;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(193, 144, 5);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-indent: 15px;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(255,237,143,1);
+    color: rgb(193, 144, 5);
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgba(255,237,143,1);
+    color: rgb(193, 144, 5);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 840px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 840px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/******
+HEADER
+******/
+
+.header {
+    background: radial-gradient(
+        circle at 50% 0%,
+        white,
+        rgb(255,231,107) 20%,
+        rgb(255,244,186) 21%,
+        rgb(255,237,143) 22%,
+        rgb(255,226, 76) 23%,
+        rgb(233,202, 37) 25%,
+        rgb(193, 144, 5) 70%
+    );
+    padding: 3vh;
+    
+}
+
+.title {
+    color: black;
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    text-align: center;
+    font-size: 7vw;
+    padding-top: 3vh;
+}
+
+.subtitle {
+    font-family: 'Cabin Sketch', cursive;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 6vw;
+    text-shadow: none;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-device-width: 800px) {
+    .title {
+        color: black;
+        font-family: 'Lobster Two', cursive;
+        font-style: italic;
+        text-align: center;
+        font-size: 5vw;
+        padding-top: 3vh;
+    }
+    
+    .subtitle {
+        font-family: 'Cabin Sketch', cursive;
+        font-variant: small-caps;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        font-size: 4vw;
+        text-shadow: none;
+        letter-spacing: 2px;
+    }
+    }
+
+/******
+COVER
+******/
+
+.cover {
+    margin: -4vh 30px 30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    background: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1.5vw;
+    padding-bottom: 3vw;
+}
+
+.cover h2 {
+    font-size: 22px;
+    font-family: Cinzel, Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.cover > p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.5em;
+    
+}
+
+
+/******Accordian Dropdown********/
+/* Style the element that is used to open and close the accordion class */
+.accordion {
+  background-color: rgb(255, 225, 78);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  border-radius: 10px;
+  margin: 20px 20px;
+}
+
+h3.active, .accordion:hover {
+  background: linear-gradient(
+    75deg,
+        rgb(255,231,107),
+        rgb(255,244,186),
+        rgb(255,237,143),
+        rgb(255,226, 76),
+        rgb(233,202, 37),
+        rgb(193, 144, 5)
+  ); 
+}
+
+.panel {
+  font-size: 22px;
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.faqs > p {
+  font-size: 22px;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 0;
+}
+
+/******
+Accordion Grid for Get Involved
+******/
+.smallbutton {
+  text-align: center;
+}
+.smallbutton a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.button2 {
+    border-radius: 50px;
+    background: linear-gradient(
+        75deg,
+        rgb(193, 144, 5),
+        #ffe76b,
+        rgb(255,244,186),
+        #ffed8f,
+        rgb(255,226, 76),
+        white,
+        rgb(233,202, 37),
+        #c19005
+    );
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 10vh;
+    width: 10vw;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: cinzel;
+    transition: .5s;
+}
+
+.button2:hover{
+    transform: scale(1.1);
+}
+
+/****Donate Buttons******/
+
+.donatebutton {
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(
+      75deg,
+      green,
+      rgb(71, 180, 71),
+      rgb(12, 243, 12)
+  );
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10vh;
+  width: 10vw;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: cinzel;
+  transition: .5s;
+}
+
+/****Share Buttons******/
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 4fr));
+  gap: 20px;
+}
+
+.zone {
+  cursor:pointer;
+  display:block;
+  text-align: center;
+  justify-items: stretch;
+  transition: all 0.3s linear;
+  margin-bottom: 10px;
+}
+
+.facebookbutton {
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(
+      75deg,
+      blue,
+      white
+  );
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10vh;
+  width: 10vw;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: cinzel;
+  transition: .5s;
+}
+
+.emailbutton {
+  border-radius: 50px;
+  background: linear-gradient(
+      75deg,
+      red,
+      white 20%,
+      white 80%,
+      red
+  );
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10vh;
+  width: 10vw;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: cinzel;
+  transition: .5s;
+  border: solid 1px red;
+}
+
+.tweetbutton {
+  border-radius: 50px;
+  background: linear-gradient(
+      75deg,
+      rgb(0, 217, 255),
+      white
+  );
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10vh;
+  width: 10vw;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: cinzel;
+  transition: .5s;
+}
+
+.instabutton {
+  border-radius: 50px;
+  background: linear-gradient(
+      75deg,
+      orange,
+      purple
+  );
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10vh;
+  width: 10vw;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: cinzel;
+  transition: .5s;
+}
+
+.button2:hover{
+  transform: scale(1.1);
+}
+
+
+ul.gettinginvolved {
+  list-style: none;
+}
+
+.getinvolved .panel {
+  font-size: 22px;
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Calendar */
+
+
+/* Responsive iFrame for Calendar */
+
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 10vh;
+  overflow: hidden;
+  }
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+@media screen and (min-width: 451px) {
+  .hidden-on-desktop {
+    display: none;
+  }
+}  
+
+@media screen and (max-width: 450px) {
+  .hidden-on-phone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 80%;
+    overflow: hidden;
+    }
+  
+  .responsive-iframe-container iframe,
+  .vresponsive-iframe-container object,
+  .vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    }
+  
+  .calendar {
+    padding: 20px 100px;
+  }
+}
+
+/**Additional Questions**/
+
+#mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+}
+
+/******
+PROJECT-GRID
+******/
+
+.projects {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.gallery > grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.box {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: 10em;
+  border-radius: 10px;
+  border: 5px solid rgb(193, 144, 5);
+  transition: all 0.3s linear;
+  background-color: rgb(255, 231, 107);
+  padding: 30px;
+  margin: 20px;
+}
+
+.box > img {
+  width: 100%;
+}
+
+.index > .grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  gap: 100px;
+}
+
+.card1 {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: inherit;
+  border-radius: 10px;
+  border: 5px solid rgb(193, 144, 5);
+  transition: all 0.3s linear;
+  background-color: rgb(255, 231, 107);
+}
+
+.card2 {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: inherit;
+  border-radius: 10px;
+  border: 5px solid rgb(193, 144, 5);
+  transition: all 0.3s linear;
+  background-color: rgb(255, 231, 107);
+}
+
+.faqs {
+  margin-top: 0;
+}
+
+.projects a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.button1 {
+    border-radius: 50px;
+    background: linear-gradient(
+        75deg,
+        rgb(193, 144, 5),
+        rgb(255,231,107),
+        rgb(255,244,186),
+        rgb(255,237,143),
+        rgb(255,226, 76),
+        white,
+        rgb(233,202, 37),
+        rgb(193, 144, 5)
+    );
+    padding: 15px 50px 15px 50px;
+    margin-bottom: 10vh;
+    width: 10vw;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: cinzel;
+    transition: .5s;
+}
+
+.button1:hover{
+    transform: scale(1.1);
+}
+
+/** Button text size 1024px **/
+
+@media screen and (max-width: 1024px) {
+    .button1 {
+        white-space: nowrap;
+    }
+    }
+
+/******
+FOOTER
+******/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(
+        75deg,
+        white,
+        rgb(255,231,107) 20%,
+        rgb(255,244,186) 21%,
+        rgb(255,237,143) 22%,
+        rgb(255,226, 76) 23%,
+        rgb(233,202, 37) 25%,
+        rgb(193, 144, 5) 70%
+    );
+    margin-top: 10vh;
+}
+
+.footer > p {
+    font-size: .7rem;
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/** Smaller than 400px problems **/
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: left;
+        display: block;
+        color: rgb(193, 144, 5);
+        text-align: center;
+        padding: 14px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        font-variant: small-caps;
+    }
+
+    .topnav.responsive button.dropbtn {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+        padding-top: 40px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-family: 'Cabin Sketch', cursive;
+        font-variant: small-caps;
+        text-transform: capitalize;
+        font-weight: none;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        text-shadow: none;
+        letter-spacing: 0px;
+    }
+
+    .cover h2 {
+        font-size: 18px;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    }
+
+    /** Between 400px and 900px **/
+
+      @media screen and (max-width: 925px) {
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(193, 144, 5);
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            font-variant: small-caps;
+        }
+    }
+
