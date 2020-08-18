@@ -16,6 +16,7 @@ p {
 .rgba-primary-3 { color: rgba(255,226, 76,1) }
 .rgba-primary-4 { color: rgba(233,202, 37,1) }
 .rgba-primary-4 { color: rgb(193, 144, 5, 1) }
+.rgba-primary-GREEM {color: rgb(56, 83, 33) }
 
 
 
@@ -40,6 +41,7 @@ NAVBAR
 .topnav {
     overflow: hidden;
     background-color:white;
+    border: solid 2px rgb(56, 83, 33);
   }
   
   .topnav a {
@@ -60,7 +62,7 @@ NAVBAR
   }
   
   .active {
-    background-color: rgba(255,231,107,1);
+    background-color: rgb(56, 83, 33);
     color: rgb(193, 144, 5);
   }
   
@@ -247,6 +249,17 @@ COVER
     color: black;
     line-height: 1.5em;
     
+}
+
+.mission {
+  color: rgb(193, 144, 5, 1);
+  font-size: 35px;
+  font-variant-caps: all-small-caps;
+  display: inline-block;
+  border-bottom: solid 2px rgb(56, 83, 33);
+  font-family: cinzel;
+  font-variant: small-caps;
+  text-transform: capitalize;
 }
 
 
@@ -538,13 +551,12 @@ PROJECT-GRID
 
 .projects {
   text-align: center;
-  margin-top: 10vh;
+  margin-top: -2vh;
 }
 
 .gallery > grid-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 10px;
 }
 
 .box {
@@ -566,33 +578,83 @@ PROJECT-GRID
 
 .index > .grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
 }
 
-.card1 {
-  cursor: pointer;
-  display: inline-block;
+/** Grid Problems larger than 678px**/
+@media screen and (min-width: 678px) {
+  .index > .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  }
+
+.counter {
+  grid-column: 1/-1;
   text-align: center;
   font-size: inherit;
   border-radius: 10px;
+  background-color: rgb(56, 83, 33);
+  transition: all 0.3s linear;
   border: 5px solid rgb(193, 144, 5);
+  padding-bottom: 5vh;
+  margin: 0px 20px 10px 20px;
+}
+
+.card {
+  text-align: center;
+  font-size: inherit;
+  border-radius: 10px;
+  border: 5px solid rgb(56, 83, 33);
   transition: all 0.3s linear;
   background-color: rgb(255, 231, 107);
+  margin: 5px 30px 5px 30px;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  padding-bottom: 5vh;
+}
+
+.counter .big {
+  font-size: 50px;
+  color: rgb(193, 144, 5);
+  padding: 0px; 
+  margin-top: 2vh;
+}
+
+.counter .small {
+  font-size: 35px;
+}
+
+.subtitle.small {
+  background-color: transparent;
+}
+
+.counter p {
+  font-size: 25px;
+  color: rgb(255, 231, 107)
+}
+
+.grid-wrapper-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card2 {
-  cursor: pointer;
-  display: inline-block;
   text-align: center;
   font-size: inherit;
-  border-radius: 10px;
-  border: 5px solid rgb(193, 144, 5);
+  border: none;
   transition: all 0.3s linear;
-  background-color: rgb(255, 231, 107);
+  background-color: none;
+  margin-top: 0px;
 }
+
+/** Grid Problems larger than 678px**/
+@media screen and (min-width: 678px) {
+  .card > .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  }
 
 .faqs {
   margin-top: 0;
@@ -619,7 +681,6 @@ PROJECT-GRID
         rgb(193, 144, 5)
     );
     padding: 15px 50px 15px 50px;
-    margin-bottom: 10vh;
     width: 10vw;
     font-variant: small-caps;
     text-transform: capitalize;
