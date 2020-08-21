@@ -10,13 +10,13 @@ p {
 /** COLORS **/
 
 
-.rgba-primary-0 { color: rgb(255, 231, 107) } Primary
+.rgba-primary-0 { color: #ffe76b } Primary
 .rgba-primary-1 { color: rgba(255,244,186,1) }
-.rgba-primary-2 { color: rgba(255,237,143,1) }
-.rgba-primary-3 { color: rgba(255,226, 76,1) }
+.rgba-primary-2 { color: #ffed8f }
+.rgba-primary-3 { color: #ffe24c }
 .rgba-primary-4 { color: rgba(233,202, 37,1) }
-.rgba-primary-4 { color: rgb(193, 144, 5, 1) }
-.rgba-primary-GREEM {color: rgb(56, 83, 33) }
+.rgba-primary-4 { color:#c19005  }
+.rgba-primary-GREEM {color: #385321 }
 
 
 
@@ -155,6 +155,7 @@ NAVBAR
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 /******
@@ -309,6 +310,19 @@ ul {
   font-size: 18px;
   line-height: 25px;
   padding: 0;
+}
+
+a.noticable-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c19005;
+}
+
+hr.fancy-line {
+  font-weight: bolder;
+  background-color: #c19005;
+  width: 70%;
+
 }
 
 /******
@@ -466,9 +480,10 @@ Accordion Grid for Get Involved
 }
 
 
-ul.gettinginvolved {
+ul.gettinginvolved, ul.equipment-list, ul.sharetools {
   list-style: none;
 }
+
 
 .getinvolved .panel {
   font-size: 22px;
@@ -576,6 +591,9 @@ PROJECT-GRID
   width: 100%;
 }
 
+
+/**Project Section for Index Page**/
+
 .index > .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
@@ -642,10 +660,29 @@ PROJECT-GRID
 .card2 {
   text-align: center;
   font-size: inherit;
+  line-height: 25px;
   border: none;
   transition: all 0.3s linear;
-  background-color: none;
-  margin-top: 0px;
+  background-color: transparent;
+  margin-top: -50px;
+  margin-bottom: -30px;
+}
+
+/** Project Section for Calendar Page**/
+
+.calendar .grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.calendar .card {
+  text-align: center;
+  font-size: inherit;
+  line-height: 25px;
+  border: none;
+  transition: all 0.3s linear;
+  background-color: transparent;
+  margin: 0;
 }
 
 /** Grid Problems larger than 678px**/
@@ -656,15 +693,17 @@ PROJECT-GRID
   }
   }
 
-.faqs {
-  margin-top: 0;
-}
-
 .projects a {
     font-size: 17px;
     color: black;
     text-decoration: none;
     display: block;
+}
+
+.projects.aboutus, .projects.getinvolved, .projects.donate, .projects.faq, .projects.shareyourgarden, .projects.contactus {
+  margin-top: 10vh;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .button1 {

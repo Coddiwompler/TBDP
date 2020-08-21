@@ -18,22 +18,22 @@
 <body>
     <div class="topnav sticky" id="myTopnav">
         <a href="index.html" class="brand">The Belfast Daffodil Project</a>
-        <a href="aboutus.html" class="active">About Us</a>
-        <div class="dropdown">
-          <button class="dropbtn"><a href="getinvolved.html">Getting Involved</a>
-            <i class="fa fa-caret-down"></i>
-          </button>
+        <a href="aboutus.html">About Us</a>
+        <div class="dropdown active">
+            <button class="dropbtn"><a href="getinvolved.html">Getting Involved</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
           <div class="dropdown-content">
-            <a href="index.html">Donate</a>
-            <a href="aboutus.html">Join a Planting Party</a>
-            <a href="shareyourgarden.html">Share Your Garden</a>
+            <a href="donate.html">Donate</a>
+            <a href="plantingparty.html">Join a Planting Party</a>
+            <a href="contactus.html">Share Your Garden</a>
             <a href="https://us17.list-manage.com/survey?u=4345a4ff448a194b656019225&id=b475cc3c01">Review Us</a>
           </div>
         </div> 
         <a href="faq.html">FAQs</a>
         <a href="calendar.html">Calendar</a>
         <a href="gallery.html">Gallery</a>
-        <a href="contactus.html" class="push">Contact Us</a>
+        <a href="contactus.html" class="push active">Contact Us</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     <div class="header">
@@ -41,21 +41,20 @@
             The Belfast Daffodil 
             <br>
             Project</h1>
-        <h2 class="subtitle">Making Belfast Bloom</h2>
+        <h2 class="subtitle">Contact Us</h2>
     </div>
-    <div class="container cover aboutus">
-        <h2 class="title2">A Little About Who We Are...</h2>
-        <p>So in April 2017 we were driving down the road in early spring, and saw a garden that had just exploded with daffodils, and thought, “Now wouldn’t it be cool if the entire town looked like that every spring?” Thus was born The Belfast Daffodil Project.
-        <br><br>
-          So who are “we”? In reality we are just a bunch of local Belfasters in cahoots with the City and various town organizations. That first year was a lot of planning and testing out feasibility, and while we were only able to plant about 2000 daffodils, we could already tell that our dream of a million daffodils was actually possible.
-        <br><br>
-          The second year and third years we really took off running, and started to solidify the manner in which we could achieve our goals. Over those 2 years we got over 70,000 bulbs into the ground, and the word was starting to get out about what we were trying to do. More people came forward to volunteer their time, gardens, and money, and in the Spring of 2020 it was becoming more evident just how amazing the exponential growth of planting so many perennials could be.
-        <br><br>
-          We are looking forward to continuing toward our goal, slowly and surely. While we may not get 100,000 bulbs every year for 10 years, we are confident that eventually those 1 million bulbs will be in the ground all over our community. And then we will rest easy, knowing that every year Belfast will be just like that first garden we saw: vibrant, alive, and brimming with hope for what the year has in store.
-          </p>
+    <div class="container cover contactus">
+        <h2 class="title2">Reach Out! We'd Love to Hear from You</h2>
+        <p>We encourage you to reach out to us so we can answer any questions or concerns you might have. Please understand that we are local volunteers as well, but we'll do our best to respond in as timely of a manner as possible. The button below will open a link to your email with our email already input. We look forward to hearing from you!
+        <br>
+            <div class="smallbutton">
+                    <a href="mailto:belfastdaffodilproject1@gmail.com?subject=Website%20-%20Contact%20Us%3A" target="_blank"><span class="button2">Email Us!</span></a>
+                </div>
+        </p>
+        <br><hr><br>
     </div>
-    <div class="projects aboutus">
-      <div><h4>Want to keep up to date with all the comings and goings of The Belfast Daffodil Project?</h4>
+    <div class="projects contactus">
+      <div><div><h4>Want to keep up to date with all the comings and goings of The Belfast Daffodil Project?</h4>
         <br>
         <a href="https://mailchi.mp/fcd6a3fc5cce/email-list-signup-form"><span class="button1">Subscribe</span></a>
       </div>
@@ -75,6 +74,24 @@
             x.className = "topnav";
           }
         }
-    </script>    
+    </script>
+    
+    <!-- Accordion Dropdown -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
 </body>
 </html>
