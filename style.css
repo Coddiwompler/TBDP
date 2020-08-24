@@ -293,23 +293,33 @@ h3.active, .accordion:hover {
 }
 
 .panel {
-  font-size: 22px;
+  font-size: 17px;
   padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
 }
 
-.faqs > p {
-  font-size: 22px;
-}
-
 ul {
   list-style-position: inside;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 25px;
+  font-style: italic;
   padding: 0;
+}
+
+ol {
+  list-style-position: inside;
+  text-align: left;
+  font-size: 17px;
+  line-height: 25px;
+  font-style: italic;
+  padding: 0;
+}
+
+.panel > p {
+  font-size: 19px;
 }
 
 a.noticable-link {
@@ -388,7 +398,7 @@ Accordion Grid for Get Involved
 
 /****Share Buttons******/
 
-#grid {
+#grid-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(1fr, 4fr));
   gap: 20px;
@@ -569,28 +579,89 @@ PROJECT-GRID
   margin-top: -2vh;
 }
 
-.gallery > grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-}
 
-.box {
+
+/******
+PROJECT-GRID - GALLERY
+******/
+/*** With Help From osgood_ at https://community.adobe.com/t5/dreamweaver/image-gallery-with-portrait-and-landscape-pictures/td-p/10209548?page=1
+and https://w3bits.com/css-masonry/***/
+
+img {
+  max-width: 100%;
+  display: block;
+  }
+  
+  * {
+  box-sizing: border-box;
+  
+  }
+  
+  .masonry {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  column-count: 4;
+  column-gap: 2em;
+  backface-visibility: hidden;
+  }
+
+.hov {
   cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  font-size: 10em;
-  border-radius: 10px;
-  border: 5px solid rgb(193, 144, 5);
-  transition: all 0.3s linear;
-  background-color: rgb(255, 231, 107);
-  padding: 30px;
-  margin: 20px;
+  padding: 4px;
 }
 
-.box > img {
+.masonry_item {
+  margin-top: 10px;
   width: 100%;
-}
+  }
+  
+  .masonry_item img {
+  margin: 30px 30px 0;
+  }
 
+/*responsiveness*/
+  @media screen and (max-width: 768px) {
+  .masonry {
+  width: 90%;
+  }
+  }
+  
+  @media screen and (max-width: 480px) {
+  .masonry {
+  width: 100%;
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .masonry {
+  column-count: 3;
+  }
+  }
+  
+  @media screen and (max-width: 480px) {
+  .masonry {
+  column-count: 2;
+  }
+  }
+  
+  @media screen and (max-width: 320px) {
+  .masonry {
+  grid-column: 1fr;
+  }
+  }
+  
+  /*hoverness*/
+
+  .masonry .hov img {
+    transition: all .5s ease-in-out;
+    backface-visibility: hidden; /* Remove Image flickering on hover */
+  }
+  
+  .masonry .hov:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 10px rgba(193, 144, 5,1);
+  }
 
 /**Project Section for Index Page**/
 
