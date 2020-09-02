@@ -318,6 +318,15 @@ ol {
   padding: 0;
 }
 
+ol.centered-list {
+  list-style-position: inside;
+  text-align: center;
+  font-size: 17px;
+  line-height: 25px;
+  font-style: italic;
+  padding: 0;
+}
+
 .panel > p {
   font-size: 19px;
 }
@@ -381,9 +390,8 @@ Accordion Grid for Get Involved
   color: white;
   border-radius: 50px;
   background: linear-gradient(
-      75deg,
-      green,
-      rgb(71, 180, 71),
+      45deg,
+      #385321 50%,
       rgb(12, 243, 12)
   );
   padding: 10px 30px 10px 30px;
