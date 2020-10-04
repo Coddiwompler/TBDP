@@ -865,7 +865,7 @@ FOOTER
     .topnav a {
         float: left;
         display: block;
-        color: rgb(193, 144, 5);
+        color: black;
         text-align: center;
         padding: 14px 10px;
         text-decoration: none;
@@ -915,7 +915,7 @@ FOOTER
         .topnav a {
             float: left;
             display: block;
-            color: rgb(193, 144, 5);
+            color: black;
             text-align: center;
             text-decoration: none;
             font-size: 15px;
